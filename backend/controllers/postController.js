@@ -24,6 +24,8 @@ exports.getPosts = async (req, res) => {
 exports.postPost = async (req, res) => {
   try {
     const newPost = await posts.create(req.body);
+    console.log(newPost);
+
     res.status(201).json({
       status: "success",
       data: {
@@ -31,6 +33,8 @@ exports.postPost = async (req, res) => {
       },
     });
   } catch (error) {
+    console.log(error);
+
     res.status(404).json({
       status: "Failed",
       message: `error${error}`,

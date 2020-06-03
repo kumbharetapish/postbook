@@ -22,7 +22,9 @@ exports.checkBody = (req, res, next) => {
 
 exports.getUsers = async (req, res) => {
   try {
-    const allUsers = await users.find();
+    const queryObj = {...req.query}
+    const allUsers = await users.find(queryObj);
+    
     res.status(200).json({
       status: "Success.",
       results: allUsers.length,
@@ -42,7 +44,9 @@ exports.getUsers = async (req, res) => {
 
 exports.getUser = async (req, res) => {
   try {
+    
     const getSelUser = await users.findById(req.params.id);
+    
     res.status(200).json({
       status: "Success",
       data: {
