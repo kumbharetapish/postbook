@@ -1,0 +1,182 @@
+span {
+  color: #e74c3c;
+}
+
+.infoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.userSection {
+  width: 40%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border-radius: 0px 15px 15px 0px;
+  box-shadow: 1px 0px 9px 0px #0000002e;
+}
+.head {
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.head h3 {
+  margin: 0;
+  width: 70%;
+  color: #f5a623;
+  font-size: 25px;
+  font-weight: 700;
+}
+.head small {
+  color: #f5a623;
+  cursor: pointer;
+  width: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.head small:hover {
+  color: #3498db;
+}
+.formData {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.inputFill {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.numberSection {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.numberSection > div {
+  width: 100%;
+  height: 40px;
+}
+.numberSection label {
+  font-weight: 600;
+}
+.numberSection input[type="tel"] {
+  height: 40px;
+  width: 100%;
+}
+.inputFill input {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+}
+
+.inputFill label {
+  font-weight: 600;
+}
+.inputFill select {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  align-items: center;
+  width: 15px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.genderSelect {
+  width: 100%;
+  height: 100px;
+}
+.gender {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  justify-content: space-evenly;
+}
+.genderSelect > label {
+  font-weight: 600;
+}
+.addUserButton {
+  width: 100%;
+  height: 50px;
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+.addUserButton button {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  background-color: #3498db;
+  font-size: 90%;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+}
+.user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  color: whitesmoke;
+  margin-top: 10px;
+  background-color: #f5a623;
+  border-radius: 15px 0 0px 15px;
+  box-shadow: 1px 0px 9px 0px #0000002e;
+}
+.user h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  color: whitesmoke;
+}
+.user img {
+  width: 50%;
+}
+button:hover {
+  background-color: #4eeb9d;
+  color: whitesmoke;
+}
+@media (max-width: 768px) {
+  .infoContainer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .userSection {
+    width: 80%;
+  }
+  .user {
+    width: 60%;
+  }
+}
+@media (max-width: 468px) {
+  .infoContainer {
+    width: 100%;
+  }
+  .userSection {
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

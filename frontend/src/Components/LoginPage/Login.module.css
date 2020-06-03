@@ -1,0 +1,101 @@
+span {
+  color: #e74c3c;
+}
+.loginSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginContaint {
+  width: 33%;
+  background-color: white;
+  box-shadow: 1px 0px 9px 0px #0000002e;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+.infoTextDiv {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.infoTextDiv h3 {
+  font-weight: 100;
+  margin: 0;
+  color: #555;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputFieldSection {
+  width: 90%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 32px;
+}
+.inputFieldSection label {
+  font-weight: 600;
+  font-size: 18px;
+}
+.inputFieldSection input {
+  width: 90%;
+  height: 40px;
+  font-size: 15px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+}
+.inputFieldSection p {
+  margin: 0;
+  font-size: 14px;
+  color: #f5a623;
+  font-weight: 600;
+}
+.inputFieldSection button {
+  width: 90%;
+  height: 40px;
+  color: #fff;
+  background-color: #3498db;
+  font-size: 90%;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+}
+.inputFieldSection button:hover {
+  background-color: #4eeb9d;
+  color: whitesmoke;
+}
+@media (max-width: 768px) {
+  .loginContaint {
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 468px) {
+  .loginContaint {
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

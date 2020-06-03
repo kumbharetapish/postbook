@@ -1,0 +1,111 @@
+.profileContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileSection {
+  width: 60%;
+  height: 500px;
+  background-color: white;
+  box-shadow: 1px 0px 9px 0px #0000002e;
+  border-radius: 15px;
+}
+.profileblock {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.profilePicSection {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profileSection h3 {
+  margin: 0;
+  color: #cacaca;
+  font-size: 3pc;
+}
+.profilePicSection img {
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+}
+.informationSection {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.information {
+  width: 30;
+}
+.personalinformation {
+  width: 60;
+}
+.information h1 {
+  color: #555;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 0;
+}
+.personalinformation p {
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 500;
+}
+.personalinformation i {
+  font-size: 30px;
+  color: #f5a623;
+  width: 50px;
+}
+.profileUpdateSection {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.profileBtn {
+  width: 40%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileBtn button {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  background-color: #3498db;
+  font-size: 90%;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 0;
+}
+button:hover {
+  background-color: #2874a6;
+  color: whitesmoke;
+}
+@media (max-width: 768px) {
+  .profileblock {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .informationSection {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 468px) {
+}
