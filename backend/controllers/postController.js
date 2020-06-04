@@ -106,8 +106,8 @@ exports.deletePost = async (req, res) => {
   }
 };
 
-exports.getFavoritePost = async (req, res) => {
-  try {
+xports.getFavoritePost = async (req, res) => {
+  tery {
     const queryObj = { ...req.query };
     console.log(queryObj);
 
