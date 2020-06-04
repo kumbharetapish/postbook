@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PostCart from "../PostCart/PostCart";
-import Axios from "axios";
+import HomeCSS from "./Home.module.css";
 import getPost from "../../Utils/Web Controller/getPost";
 
 export default class Home extends Component {
@@ -19,8 +19,10 @@ export default class Home extends Component {
   }
 
   render() {
-    const posts = this.state.postdata.map((el) => <PostCart data={el} />);
+    const posts = this.state.postdata.map((el) => (
+      <PostCart data={el} kry={el.updateTime} />
+    ));
 
-    return <div>{posts}</div>;
+    return <div className={HomeCSS.container}>{posts}</div>;
   }
 }

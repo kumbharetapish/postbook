@@ -105,3 +105,28 @@ exports.deletePost = async (req, res) => {
     });
   }
 };
+
+exports.getFavoritePost = async (req, res) => {
+  try {
+    const queryObj = { ...req.query };
+    console.log(queryObj);
+
+    const favPosts = await posts.find(queryObj);
+    res.status(200).json({
+      status: "Success.",
+      results: favPosts.length,
+      data: {
+        users: favPosts,
+      },
+    });
+  } catch (err) {
+    console.log(err);
+
+    res.status(404).json({
+      status: "Failed",
+      message: {
+        err,
+      },
+    });
+  }
+};

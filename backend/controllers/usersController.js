@@ -43,10 +43,8 @@ exports.getUsers = async (req, res) => {
 };
 
 exports.getUser = async (req, res) => {
-  try {
-    
-    const getSelUser = await users.findById(req.params.id);
-    
+  try {    
+    const getSelUser = await users.findById(req.params.id);   
     res.status(200).json({
       status: "Success",
       data: {
@@ -60,6 +58,9 @@ exports.getUser = async (req, res) => {
     });
   }
 };
+
+
+
 
 exports.postUser = async (req, res) => {
   try {

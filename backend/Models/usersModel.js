@@ -28,10 +28,7 @@ const userSchema = new mongoose.Schema({
   },
   dob: { type: String },
   gender: { type: String },
-  favorite: {
-    type: [String],
-    default: null,
-  },
+  favorite: { id: [{ type: mongoose.Schema.Types.ObjectId, default: null }] },
   status: { default: false },
 });
 

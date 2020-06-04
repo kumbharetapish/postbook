@@ -6,7 +6,7 @@
   background-color: #fff;
   margin: 0 auto;
   align-items: center;
-  margin-top:50px ;
+  margin-top: 50px;
 }
 
 .wrapper {
@@ -100,4 +100,16 @@
 
 .headingWrapper > a:hover {
   color: #e1b741;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .wrapper {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 801px) and (-webkit-min-device-pixel-ratio: 1) {
+  .wrapper {
+    width: 85%;
+  }
 }

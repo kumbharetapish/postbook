@@ -21,7 +21,7 @@ export default class Signup extends Component {
     // loadUser(userData);
     alert("Your profile succesfully updated");
     const path = `login`;
-    this.props.history.push(path);
+    window.location.assign(path);
   };
 
   handleChange = (e) => {
@@ -34,11 +34,11 @@ export default class Signup extends Component {
   render() {
     return (
       <div className={SignupCSS.container}>
-        <div className={SignupCSS.wrapper} >
-          <div className ={SignupCSS.headingWrapper }>
+        <div className={SignupCSS.wrapper}>
+          <div className={SignupCSS.headingWrapper}>
             <h2>{"Sign Up"} </h2>
           </div>
-          <div className ={SignupCSS.formWrapper } autocomplete="off" >
+          <div className={SignupCSS.formWrapper} autocomplete="off">
             <form onSubmit={this.onFormSubmit}>
               <label htmlFor="email ">{"Email"}</label>
               <input type="text" name="email" />{" "}

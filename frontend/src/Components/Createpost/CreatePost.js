@@ -11,6 +11,7 @@ export default class CreatePost extends Component {
     const createdPost = {
       message: e.target.message.value,
       updateTime: new Date().toDateString(),
+      usersData: JSON.parse(localStorage.getItem("userData")),
     };
     console.log(createdPost);
     postPosts(createdPost);
@@ -25,7 +26,7 @@ export default class CreatePost extends Component {
 
   render() {
     return (
-      <div className={CreatePostCSS.container}>
+      <div className={CreatePostCSS.container} >
         <div className={CreatePostCSS.wrapper}>
           <div className={CreatePostCSS.headingWrapper}>
             <h2>{"Create Post"} </h2>
